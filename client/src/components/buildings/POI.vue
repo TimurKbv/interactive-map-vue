@@ -17,7 +17,7 @@ function poiDetailsHandler(e) {
         store.poiDetails = null;
         store.buildingDetailsStatus = false
     } else {
-        store.buildingArt =  IBuilding.poi
+        store.buildingArt = IBuilding.poi
         store.poiDetails = props;
         store.buildingDetailsStatus = true
     }
@@ -26,16 +26,14 @@ function poiDetailsHandler(e) {
 </script>
 
 <template>
-    <button 
-    @click="poiDetailsHandler"
+    <button @click="poiDetailsHandler"
         class="bg-zinc-600 absolute border  text-center text-white text flex items-center justify-center hover:scale-95 hover:bg-sky-500 transition-all duration-300 cursor-pointer"
         v-bind:style="{
-            width: size.width + 'px' ,
+            width: size.width + 'px',
             height: size.height + 'px',
             top: Coordinates.Y + 'px',
             left: Coordinates.X + 'px',
-        }"
-    >
+        }">
         <span>{{ name }}</span>
     </button>
 </template>

@@ -1,5 +1,4 @@
 <script setup >
-  import { defineComponent } from 'vue';  
   import AppHeader from './components/AppHeader.vue';
   import AppNavBar from './components/AppNavBar.vue';
   import MainMap from './components/MainMap.vue';
@@ -13,7 +12,6 @@
       <AppNavBar />
       <MainMap />
       <AppFooter />
-
     </div>
 </template>
 

@@ -9,6 +9,5 @@
             </a>
         </div>
 
-
     </div>
 </template>
